@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSkin" width="600" height="950" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Button id="startButton" label="" x="134.5" y="726.32">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_png" source.down="btn_play1_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="拖动瓶子" x="180" y="139.12" textColor="0x000000" size="60" bold="true" italic="true" textAlign="center"/>
+</e:Skin>

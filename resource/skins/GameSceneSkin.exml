@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameScene" width="600" height="950" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+	</w:Declarations>
+	<e:Image source="gamebg_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Image id="bg1" source="conveyer_png" x="226.5" y="120"/>
+	<e:Image id="bg2" source="conveyer_png" x="226.5" y="-710"/>
+	<e:Image source="gameui1_png" x="0" top="0"/>
+	<e:Label id="score" text="0" x="458.67" y="79" textColor="0x000000" anchorOffsetX="0" width="72"/>
+	<e:Group id="bottleGroup" width="109.09" height="824.24" x="242.27" y="125.21" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group id="boxGroup" x="0" y="244">
+		<ns1:Box width="146" height="231" x="0" y="0" skinName="Box1Skin" anchorOffsetX="0" anchorOffsetY="0" type="1"/>
+		<ns1:Box width="146" height="231" x="0" y="231" anchorOffsetX="0" anchorOffsetY="0" skinName="Box2Skin" type="2"/>
+		<ns1:Box width="146" height="231" x="0" y="474.45" anchorOffsetX="0" anchorOffsetY="0" skinName="Box3Skin" type="3"/>
+		<ns1:Box width="146" height="231" x="454" y="475" anchorOffsetX="0" anchorOffsetY="0" skinName="Box6Skin" type="6"/>
+		<ns1:Box width="146" height="231" x="461" y="231" anchorOffsetX="0" anchorOffsetY="0" skinName="Box5Skin" type="5"/>
+		<ns1:Box width="146" height="231" x="454" y="0" anchorOffsetX="0" anchorOffsetY="0" skinName="Box4Skin" type="4"/>
+	</e:Group>
+	<e:Group id="gameOverGroup" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" strokeAlpha="1" fillAlpha="0.5"/>
+		<e:Image source="overrole_png" x="187" y="391"/>
+		<e:Image source="overpanel_png" x="60" y="5"/>
+		<e:Button id="mainmenuButton" label="" x="134.5" y="813.45">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="restartButton" label="" x="138" y="744">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_replay_png" source.down="btn_replay1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="得分:" x="170.5" y="140" size="58" textColor="0xffffff"/>
+		<e:Label id="endScore" text="0" x="318.36" y="140" size="58"/>
+	</e:Group>
+</e:Skin>
